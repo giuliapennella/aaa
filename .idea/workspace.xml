@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f06f799-b30c-4aac-8fff-ee85636e14e0" name="Changes" comment="diocane">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "branch1",
-    "last_directory_selection": "C:/Users/giuli/IdeaProjects/gui/src/main/java/com/example/gui",
+    "last_directory_selection": "C:/Users/Lenovo/IdeaProjects/aaa/src/main/java/com/example/gui",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -117,19 +115,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="diocane" />
-    <option name="LAST_COMMIT_MESSAGE" value="diocane" />
+    <MESSAGE value="scene1 and 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="scene1 and 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java</url>
-          <line>22</line>
+          <line>23</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
