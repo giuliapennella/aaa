@@ -30,12 +30,10 @@ public class Main extends Application {
     }
 
     public void changeScene(int i){
-        Platform.runLater(() -> {
-            if (map.containsKey(i + 1)) {
-                stage.setScene(map.get(i+1).getScene());
-                stage.show();
-            }
-        });
+        if (map.containsKey(i + 1)) {
+            stage.setScene(map.get(i+1).getScene());
+            stage.show();
+        }
     }
 
     public static void main(String[] args) {
