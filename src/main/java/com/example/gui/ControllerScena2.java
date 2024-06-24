@@ -5,8 +5,6 @@ import javafx.scene.input.MouseEvent;
 
 public class ControllerScena2 extends ControllerScene {
     Main main;
-    int code=2;
-
     public void setMain(Main main){
         this.main=main;
     }
@@ -21,9 +19,9 @@ public class ControllerScena2 extends ControllerScene {
             case "join":
                 System.out.println("Hai inserito: join");
                 break;
-
         }
-        main.changeScene(code);
+
+        main.changeScene(2);
     }
 
 }

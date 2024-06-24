@@ -9,7 +9,7 @@ public class ControllerScena1 extends ControllerScene {
     @FXML
     public TextField nick;
     Main main;
-    int code=1;
+
 
     public void setMain(Main main){
         this.main=main;
@@ -17,10 +17,9 @@ public class ControllerScena1 extends ControllerScene {
 
     @FXML
     public void prendiNickname(ActionEvent mouseEvent) {
-
             String inputText = nick.getText();
             System.out.println("Hai inserito: " + inputText);
-            main.changeScene(code);
+            main.changeScene(1);
     }
 
 

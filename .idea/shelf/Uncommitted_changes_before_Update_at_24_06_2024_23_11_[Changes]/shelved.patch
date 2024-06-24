@@ -1,0 +1,100 @@
+Index: src/main/java/com/example/gui/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.gui;\r\n\r\nimport javafx.application.Application;\r\nimport javafx.application.Platform;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Scene;\r\nimport javafx.stage.Stage;\r\nimport java.io.IOException;\r\nimport java.util.HashMap;\r\n\r\npublic class Main extends Application {\r\n    Stage stage;\r\n    int n=2;\r\n    HashMap<Integer, Tuple> map = new HashMap<>();\r\n    @Override\r\n    public void start(Stage stage) throws IOException {\r\n        this.stage = stage;\r\n        for(int i=1;i<=n;i++) {\r\n            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(\"scena\"+i+\".fxml\"));\r\n            Scene scene = new Scene(fxmlLoader.load(), 320, 240);\r\n            ControllerScene controller = fxmlLoader.getController();\r\n            controller.setMain(this);\r\n            controller.setInt(i);\r\n            Tuple tuple = new Tuple(scene,controller);\r\n            map.put(i,tuple);\r\n        }\r\n\r\n        stage.setScene(map.get(1).getScene());\r\n        stage.show();\r\n    }\r\n\r\n    public void changeScene(int i){\r\n        if (map.containsKey(i + 1)) {\r\n            stage.setScene(map.get(i+1).getScene());\r\n            stage.show();\r\n        }\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/gui/Main.java b/src/main/java/com/example/gui/Main.java
+--- a/src/main/java/com/example/gui/Main.java	(revision a8b734ec61b1804cb0b9981c71955deb8b0a7006)
++++ b/src/main/java/com/example/gui/Main.java	(date 1719263241986)
+@@ -1,7 +1,6 @@
+ package com.example.gui;
+ 
+ import javafx.application.Application;
+-import javafx.application.Platform;
+ import javafx.fxml.FXMLLoader;
+ import javafx.scene.Scene;
+ import javafx.stage.Stage;
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6f06f799-b30c-4aac-8fff-ee85636e14e0\" name=\"Changes\" comment=\"diocane\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gui/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gui/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2iKjuejv4CKdXjDZgtcU0zgCitH\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_directory_selection&quot;: &quot;C:/Users/giuli/IdeaProjects/gui/src/main/java/com/example/gui&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6f06f799-b30c-4aac-8fff-ee85636e14e0\" name=\"Changes\" comment=\"\" />\r\n      <created>1719246388729</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1719246388729</updated>\r\n      <workItem from=\"1719246389806\" duration=\"6975000\" />\r\n      <workItem from=\"1719259513743\" duration=\"3465000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"diocane\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719259903655</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719259903655</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"diocane\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719261241654</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719261241654</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"diocane\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"diocane\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint type=\"java-exception\">\r\n          <properties class=\"java.lang.RuntimeException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"9\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a8b734ec61b1804cb0b9981c71955deb8b0a7006)
++++ b/.idea/workspace.xml	(date 1719263377636)
+@@ -5,10 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="6f06f799-b30c-4aac-8fff-ee85636e14e0" name="Changes" comment="diocane">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -54,6 +51,26 @@
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
++  <component name="RunManager">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="com.example.gui.Main" />
++      <module name="gui" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.example.gui.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Main" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -63,7 +80,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1719246388729</updated>
+       <workItem from="1719246389806" duration="6975000" />
+-      <workItem from="1719259513743" duration="3465000" />
++      <workItem from="1719259513743" duration="3831000" />
+     </task>
+     <task id="LOCAL-00001" summary="diocane">
+       <option name="closed" value="true" />
+@@ -81,7 +98,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1719261241654</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="diocane">
++      <option name="closed" value="true" />
++      <created>1719263018623</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1719263018623</updated>
++    </task>
++    <task id="LOCAL-00004" summary="diocane">
++      <option name="closed" value="true" />
++      <created>1719263227362</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1719263227362</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
