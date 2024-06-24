@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 public class Main extends Application {
     Stage stage;
-    int n=2;
+    int n=3;
     HashMap<Integer, Tuple> map = new HashMap<>();
     @Override
     public void start(Stage stage) throws IOException {
@@ -19,7 +19,6 @@ public class Main extends Application {
             Scene scene = new Scene(fxmlLoader.load(), 320, 240);
             ControllerScene controller = fxmlLoader.getController();
             controller.setMain(this);
-            controller.setInt(i);
             Tuple tuple = new Tuple(scene,controller);
             map.put(i,tuple);
         }

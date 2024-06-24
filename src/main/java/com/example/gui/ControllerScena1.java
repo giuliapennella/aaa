@@ -9,15 +9,12 @@ public class ControllerScena1 extends ControllerScene {
     @FXML
     public TextField nick;
     Main main;
-    int code;
+    int code=1;
 
     public void setMain(Main main){
         this.main=main;
     }
 
-    public void setInt(int i) {
-        this.code=i;
-    }
     @FXML
     public void prendiNickname(ActionEvent mouseEvent) {
 
