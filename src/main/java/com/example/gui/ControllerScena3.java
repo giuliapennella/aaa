@@ -35,12 +35,6 @@ public class ControllerScena3 extends ControllerScene {
                 gridPane.add(label, j, i);*/
             }
         }
-
-
-        // Assicurati che l'ImageView si adatti alla cella
-        imageView.setFitWidth(gridPane.getColumnConstraints().get(0).getPrefWidth());
-        imageView.setFitHeight(gridPane.getRowConstraints().get(0).getPrefHeight());
-        imageView.setPreserveRatio(true);
     }
 
     public void setMain(Main main){
