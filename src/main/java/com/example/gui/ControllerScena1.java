@@ -18,6 +18,7 @@ public class ControllerScena1 extends ControllerScene {
     public void setInt(int i) {
         this.code=i;
     }
+    @FXML
     public void prendiNickname(ActionEvent mouseEvent) {
 
             String inputText = nick.getText();
