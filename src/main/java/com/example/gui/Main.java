@@ -1,7 +1,6 @@
 package com.example.gui;
 
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -30,10 +29,12 @@ public class Main extends Application {
     }
 
     public void changeScene(int i){
-        if (map.containsKey(i + 1)) {
-            stage.setScene(map.get(i+1).getScene());
+        if(map.containsKey(i+1))
+        {
+            stage.setScene(map.get(i + 1).getScene());
             stage.show();
         }
+
     }
 
     public static void main(String[] args) {
