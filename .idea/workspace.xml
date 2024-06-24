@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f06f799-b30c-4aac-8fff-ee85636e14e0" name="Changes" comment="diocane">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui/boh.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena3.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -30,7 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -118,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719265596533</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="diocane">
+      <option name="closed" value="true" />
+      <created>1719266740028</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719266740028</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
