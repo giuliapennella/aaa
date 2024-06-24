@@ -31,7 +31,7 @@ public class Main extends Application {
     public void changeScene(int i){
         if(map.containsKey(i+1))
         {
-            stage.setScene(map.get(1).getScene());
+            stage.setScene(map.get(i + 1).getScene());
             stage.show();
         }
 

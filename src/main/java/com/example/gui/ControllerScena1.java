@@ -1,5 +1,6 @@
 package com.example.gui;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -17,7 +18,7 @@ public class ControllerScena1 extends ControllerScene {
     public void setInt(int i) {
         this.code=i;
     }
-    public void prendiNickname(MouseEvent mouseEvent) {
+    public void prendiNickname(ActionEvent mouseEvent) {
 
             String inputText = nick.getText();
             System.out.println("Hai inserito: " + inputText);
