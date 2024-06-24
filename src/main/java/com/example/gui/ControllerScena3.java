@@ -21,11 +21,26 @@ public class ControllerScena3 extends ControllerScene {
 
         for (int i = 0; i < 14; i++) {
             for (int j = 0; j < 14; j++) {
-                ImageView imageView = new ImageView(image);
-                imageView.setFitWidth(200);
-                imageView.setFitHeight(100);
-                imageView.setPreserveRatio(true);
-                gridPane.add(imageView, j, i);
+                if(i%2==0)
+                {
+                    if(j%2==0)
+                    {
+                        ImageView imageView = new ImageView(image);
+                        imageView.setFitWidth(200);
+                        imageView.setFitHeight(100);
+                        imageView.setPreserveRatio(true);
+                        gridPane.add(imageView, j, i);
+                    }
+                }else {
+                    if(j%2==1)
+                    {
+                        ImageView imageView = new ImageView(image);
+                        imageView.setFitWidth(200);
+                        imageView.setFitHeight(100);
+                        imageView.setPreserveRatio(true);
+                        gridPane.add(imageView, j, i);
+                    }
+                }
             }
         }
     }
