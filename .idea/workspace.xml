@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f06f799-b30c-4aac-8fff-ee85636e14e0" name="Changes" comment="diocane">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui/ControllerScena1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui/scena1.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719246388729</updated>
       <workItem from="1719246389806" duration="6975000" />
-      <workItem from="1719259513743" duration="1690000" />
+      <workItem from="1719259513743" duration="3465000" />
     </task>
     <task id="LOCAL-00001" summary="diocane">
       <option name="closed" value="true" />
@@ -70,7 +73,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719259903655</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="diocane">
+      <option name="closed" value="true" />
+      <created>1719261241654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719261241654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,5 +101,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="diocane" />
     <option name="LAST_COMMIT_MESSAGE" value="diocane" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
