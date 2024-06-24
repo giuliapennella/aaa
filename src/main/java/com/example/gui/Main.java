@@ -32,7 +32,13 @@ public class Main extends Application {
         {
             stage.setScene(map.get(i + 1).getScene());
             stage.show();
+            if(i==2){
+                ControllerScena3 controller = (ControllerScena3) map.get(3).getController();
+                controller.addButtonGridPane();
+            }
         }
+
+
 
     }
 

@@ -22,17 +22,10 @@ public class ControllerScena3 extends ControllerScene {
         for (int i = 0; i < 14; i++) {
             for (int j = 0; j < 14; j++) {
                 ImageView imageView = new ImageView(image);
-                imageView.setFitWidth(gridPane.getColumnConstraints().get(0).getPrefWidth());
-                imageView.setFitHeight(gridPane.getRowConstraints().get(0).getPrefHeight());
+                imageView.setFitWidth(200);
+                imageView.setFitHeight(100);
                 imageView.setPreserveRatio(true);
                 gridPane.add(imageView, j, i);
-                /*Button button = new button("Cell " + i + "," + j);
-                label.setStyle("-fx-border-color: black; -fx-padding: 10px;");
-                label.setOnMouseClicked(event -> {
-                    System.out.println("Clicked on: " + label.getText());
-                });
-
-                gridPane.add(label, j, i);*/
             }
         }
     }
